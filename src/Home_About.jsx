@@ -9,12 +9,6 @@ function Home_About() {
           <img src="home-about.jpg" alt="Description of the image" />
         </div>
         <div className="right-column">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-
           <h2 className="home-about-h3">About Golf Club 176</h2>
           <br />
           <p className="home-about-p">
@@ -26,14 +20,6 @@ function Home_About() {
           </p>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   )
 }

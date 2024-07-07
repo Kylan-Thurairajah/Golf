@@ -78,9 +78,10 @@
 .home-about-container {
   display: flex;
   justify-content: center; /* Center columns horizontally */
-  padding-left: 200px; /* Adjust padding as needed */
-  padding-right: 200px;
-  padding-top: 250px;
+  padding-left: 150px; /* Adjust padding as needed */
+  padding-right: 150px;
+  padding-top: 200px;
+  padding-bottom: 150px;
 }
 
 .left-column {
@@ -91,7 +92,7 @@
 }
 
 .left-column img {
-  width: 700px; /* Ensure image scales within its container */
+  width: 500px; /* Ensure image scales within its container */
   height: 100%;
   height: auto; /* Maintain aspect ratio */
   display: block; /* Remove extra space below image */
@@ -102,23 +103,14 @@
   padding-left: 0px; /* Adjust padding between image and text */
 }
 
-.right-column h2 {
-  font-size: 24px; /* Example styling for heading */
-  margin-bottom: 10px; /* Optional margin for spacing */
-}
-
-.right-column p {
-  font-size: 16px; /* Example styling for paragraphs */
-  line-height: 1.6; /* Example line height for readability */
-}
-
 .home-about-h3 {
-  font-size: 160px !important;
+  padding-top: 35px;
+  font-size: 115px !important;
   font-weight: 600;
   color: rgb(212, 154, 45);
 }
 .home-about-p {
-  font-size: 25px !important;
+  font-size: 22px !important;
   font-weight: 300;
 }
 
