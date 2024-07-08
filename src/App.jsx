@@ -1,30 +1,32 @@
-import { useState } from "react"
-import "./App.css"
+import React, { useState } from "react"
 import Navigation from "./Navigation"
-import "bootstrap/dist/css/bootstrap.min.css"
-import "./App.css"
 import Home_About from "./Home_About"
 import Home_Benefits from "./Home_Benefits"
+import Home_Testimonial from "./Home_Testimonial"
+import About from "./About"
+import Holes from "./Holes"
+import Services from "./Services"
+import Membership from "./Membership"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./App.css"
+import Home from "./Home"
+import { Route, Routes } from "react-router-dom"
+import Footer from "./Footer"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Navigation />
-      <div className="image-container">
-        <img
-          src="golf-ball.jpg" // Replace with your image URL
-          alt="Full Size"
-          className="main-img"
-        />
-        <div className="text-overlay">
-          <div className="oswald-text text-large">GOLF CLUB 176</div>
-          <div className="oswald-text text-small">Swing Into Serenity</div>
-        </div>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/holes" element={<Holes />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/membership" element={<Membership />} />
+        </Routes>
       </div>
-      <Home_About />
-      <Home_Benefits />
+      <Footer />
     </>
   )
 }

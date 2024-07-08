@@ -43,12 +43,26 @@
   overflow: hidden;
 }
 
+.about-image-container {
+  position: relative;
+  width: 100%; /* Ensure it takes full width of the viewport */
+  max-width: 100vw; /* Limit width to viewport width */
+  height: 100vh; /* Ensure it takes full height of the viewport */
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
 .main-img {
   width: 100%; /* Ensure the image takes full width of its container */
   height: 100%; /* Ensure the image takes full height of its container */
   object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
 }
 
+.about-img {
+  width: 100%; /* Ensure the image takes full width of its container */
+  height: 100%; /* Ensure the image takes full height of its container */
+  object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+}
 .text-overlay {
   position: absolute;
   top: 60%; /* Adjust the percentage to move the text down */
@@ -64,6 +78,25 @@
 }
 
 .text-small {
+  font-size: 2rem; /* Adjust size of small text as needed */
+  margin-top: 10px; /* Adjust spacing between large and small text */
+  font-weight: 400;
+}
+.about-text-overlay {
+  position: absolute;
+  top: 50%; /* Adjust the percentage to move the text down */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Change to your desired text color */
+  text-align: center;
+}
+
+.about-text-large {
+  font-size: 4.5rem; /* Adjust size of large text as needed */
+  font-weight: 600;
+}
+
+.about-text-small {
   font-size: 2rem; /* Adjust size of small text as needed */
   margin-top: 10px; /* Adjust spacing between large and small text */
   font-weight: 400;
@@ -146,4 +179,79 @@
   font-size: 20px; /* Example font size for section content */
   line-height: 1.6; /* Example line height for readability */
   font-weight: 400;
+}
+
+/* Example of styling to ensure proper dimensions */
+.testimonial-carousel .carousel-item {
+  height: 100%; /* Set a fixed height for each carousel item */
+}
+
+.testimonial-carousel img {
+  height: 4000px; /* Ensure images have consistent height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-item h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.about-content {
+  margin-top: 50px; /* Adjust as needed */
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-text-large {
+  text-align: center;
+
+  line-height: 1.6;
+
+  margin: 20px; /* Example margin */
+  font-weight: 500;
+  font-size: 50px;
+}
+.about-text-small {
+  text-align: center;
+
+  line-height: 1.6;
+
+  margin: 20px; /* Example margin */
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* Add any custom styling for your cards here */
+.card {
+  /* Example styles */
+  margin-bottom: 20px;
+}
+.faceted-filter-form {
+  margin-left: 20px;
+  font-weight: 300;
+  font-size: 16px;
 }
