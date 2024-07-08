@@ -1,16 +1,12 @@
 import React from "react"
 import Container from "react-bootstrap/Container"
-import "./App.css" // Assuming you have a separate CSS file for About page styles
+import "./App.css"
 
 function About() {
   return (
     <>
       <div className="about-image-container">
-        <img
-          src="aboutt.jpg" // Replace with your image URL
-          alt="Full Size"
-          className="about-img"
-        />
+        <img src="aboutt.jpg" alt="Full Size" className="about-img" />
         <div className="about-text-overlay">
           <div className="oswald-text about-text-large">About Us</div>
           <div className="oswald-text about-text-small">-Who We Are-</div>

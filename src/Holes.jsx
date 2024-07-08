@@ -1,8 +1,8 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import CustomCard from "./Card" // Assuming Card.jsx is in the same directory
-import FacetedSearch from "./FacetedSearch" // Assuming FacetedSearch.jsx is in the same directory
-import "./App.css" // Optional: CSS for specific styling
+import CustomCard from "./Card"
+import FacetedSearch from "./FacetedSearch"
+import "./App.css"
 
 // Sample data for cards
 const cardData = [
@@ -12,7 +12,6 @@ const cardData = [
   { id: 4, title: "Hole 4", image: "hole4.jpg", category: "Category 3" },
   { id: 5, title: "Hole 5", image: "hole5.jpg", category: "Category 2" },
   { id: 6, title: "Hole 6", image: "hole6.jpg", category: "Category 1" },
-  // Add more data as needed
 ]
 
 function Holes() {
@@ -23,11 +22,11 @@ function Holes() {
       <br />
       <Row>
         <Col>
-          {/* Faceted search sidebar */}
+          {}
           <FacetedSearch />
         </Col>
         <Col md={7}>
-          {/* Cards layout */}
+          {}
 
           {cardData.map((card) => (
             <Row key={card.id} className="mb-4">
